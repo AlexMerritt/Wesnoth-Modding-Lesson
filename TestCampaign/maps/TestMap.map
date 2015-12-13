@@ -1,0 +1,15 @@
+border_size=1
+usage=map
+
+Wog         , Wog         , Wog         , Wog         , Wog         , Ss          , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      
+Wog         , Wog         , Wog         , Wog         , Wog         , Ss          , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gll         , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      
+Wog         , Wog         , Wog         , Wog         , Wog         , Ss^Vhs      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gll         , Gll         , Gll         , Gll         , Gll         , Gs^Fds      , Gs^Fds      
+Ss          , Ss          , Wog         , Wog         , Wwrg        , Ss^Vhs      , Ss          , Ss          , Wwg         , Gll         , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gll         , Gll         
+Ket         , Ss          , Ss          , Wog         , Wog         , Wog         , Wwg         , Wwg         , Wwf         , Gll         , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      
+Ket         , Ket         , Ket         , Ss          , Ss          , Wwg         , Wwf         , Wwf         , Wwg         , Ss          , Ss          , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      , Gs^Fds      
+Ket         , Ket         , Ket         , Ket         , Gll         , Wwf         , Wwg         , Wwg         , Wog         , Wog         , Wog         , Ss          , Ss          , Ss          , Ss          , Gs^Fds      , Gs^Fds      
+Ket         , Ket         , Gll         , Gg          , Gll         , Gll         , Ket         , Ss          , Ss          , Wog         , Wog         , Wog         , Wwg         , Ss          , Ss          , Gs^Fds      , Ss          
+Gll         , Gll         , Gll         , Gll         , Ket         , Ket         , Ket         , Ket         , Ket         , Ss          , Ww^Vm       , Wwg         , Wwg         , Wog         , Wog         , Ss          , Ss          
+Ket         , Gll         , Gll         , Ket         , Gll         , Ket         , Ket         , Ket         , Ket         , Ss          , Ww^Vm       , Ss          , Ss          , Wwg         , Wog         , Wog         , Wog         
+Ket         , Ket         , Ket         , Gll         , Gll         , Gll         , Ket         , Ket         , Ket         , Ss          , Ss          , Ww^Vm       , Ww^Vm       , Ww^Vm       , Ww^Vm       , Wog         , Wog         
+Ket         , Ket         , Ket         , Ket         , Gg          , Gll         , Ket         , Ket         , Ket         , Ss          , Ss          , Ss          , Ss          , Ss          , Ss          , Ss          , Wo          
