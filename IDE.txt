@@ -1,0 +1,19 @@
+IDE Tutorial
+	1)Solution Explorer
+		a) Explanation of the project folders
+			1) The project folder which is top most element and contains all of the project files
+			2) images - where all of the images for the project are stored
+			3) maps - there is where all of the maps live
+			4) music - all of the music and audio are stored
+			5) scenarios - scenarios are a level which consists of a map and what happens in that map
+			6) units - this is where all of the characters are stored
+			7) _main.cfg - this is how the game will figure out what are project does. We will not need to modify it.
+			8) We can ignore the rest because either it is part of the game and if we mess with it we can break the game or we wont going over it
+		
+		b) How to navigate the files
+			1) If you hover over the solution explorer you will see tiny little triangles. If you click on the triangle or double click on the folder it will expand and list all of the files and folders in that folder
+			2) If you double click on any file it will open it up. For images it should open it up in a preview window. Music should open up in the default music player. And most everything else will open up in the editor.
+			
+		c) Editor
+			1) When you open up a file in the editor it will take up most of the screen and will look some what like a text editor such as notepad or word.
+			2) When you open up a file you will see a bunch of formatted text which is what the game uses to make the game.

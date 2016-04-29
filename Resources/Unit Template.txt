@@ -1,0 +1,21 @@
+#textdomain wesnoth-units
+[unit_type]
+	id = 
+	name = _""
+	image = units/basic.png
+	
+	hp = 10
+	movement = 5
+	
+	movement_type=woodlands
+	description = _""
+	
+	[attack]
+		name = sword
+		description = _"sword"
+		icon = weapons/sword.png
+		type = blade
+		attack = 5
+		number = 1
+	[/attack]
+[/unit_type]

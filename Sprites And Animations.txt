@@ -1,0 +1,143 @@
+SPRITES AND ANIMATION
+
+Required
+1) Adding images to the project
+2) Creating new units
+3) Unit Attributes
+4) Creating a new unit
+
+---- Step 1: Adding a basic character sprite ----
+
+	a) Right click on the units folder
+	b) Click on new -> Wesnoth Config File (.cfg)
+	c) A window will popup and you will want to rename the File name: from new_file.cfg to whatever you want to call it but make sure it ends in .cfg or else it will not work
+	d) Go to the desktop and Wesnoth Module -> Resources -> open Unit Template
+	e) Copy the entire contense of Unit Template into the unit you just made
+	f) Give the unit an id (So anythign you want to call it, like fighter, mage, Charlie, ect) This is how we will refer to the unit in the code
+	g) In the middle of the 2 " give it a name, this is what it will show up as in the game (_"Figher" , _"Mage", _"Charlie")
+	h) go to scenarios -> scenario.cfg and open
+	i) scroll down to where it says 
+		[side]
+			side=1
+			controller=human
+			team_name=2
+			user_team_name= _ "Players Forces"
+		
+			type=Basic <---
+			id=Campion
+			name= _ "Fighter" <---
+			canrecruit=yes
+		
+			recruit=Elvish Fighter,Elvish Archer,Horseman,Mage,Elvish Shaman
+		
+			gold=100
+			income=10
+		[/side]
+		
+		which is about 1/2 down
+		
+	j) Where it says type = ... change it so that the it equals the id of your unit
+	k) Do the same for the name and the unit's name
+			
+	l) Run the game, load up the campaign and see if our unit shows up
+	m) Drag you character's image into the folder images/units
+	n) in the unit file find image = ... and change it to equal units/<you character's image name>
+	
+	now if you run it, you should see your character in the game
+	
+	optional - add a description to the unit 
+	
+	---- End of creating a new character ----
+
+----This is what it should look like----
+#textdomain wesnoth-units
+[unit_type]
+	id = Basic
+	name = _"Basic"
+	image = units/basic.png
+	
+	hp = 10
+	movement = 5
+	
+	movement_type=woodlands
+	description = _"This is the most basic of characters"
+	
+	[attack]
+		name = sword
+		description = _"sword"
+		icon = weapons/sword.png
+		type = blade
+		attack = 5
+		number = 1
+	[/attack]
+[/unit_type]
+
+---- Step 2: Adding an animation ----
+
+	add animation frames to the project
+	
+	a) We are going to start adding stuff after [/attack] but before [/unit_type]
+	b) We need to add [attack_anim] and add [/attack_anim] on the next line
+		---Comment: this is the start of an attack animation---
+		[attack_anim]
+		[/attack_anim]
+		
+	c) Next we need to say when to play the animation so we need to add an [filter_attack] section inside of the [attack_anim] and in the middle of the [filter_attack] block add a name = < the name of the attack > 
+		[filter_attack]
+			name=sword
+		[/filter_attack]
+		
+	d) After the [/filter_attack] block we need to add a [frame] block
+		[frame]
+		[/frame]
+		
+	e) Inside of the [frame] block we need to add
+		begin = when the animation starts
+		end = when the animation ends
+		image = the frame of the animation units/<unit attack frame>
+		
+	f) time reference scale 0 is when the damage is delt so you want to start your animations with a negative number and end with a positive number
+	
+	run the game and see if it works
+	
+	---- End of adding attack animations ----
+
+----This is what it should look like----
+[unit_type]
+	id = Basic
+	name = _"Basic"
+	image = units/basic.png
+	
+	hitpoints = 2600
+    movement = 50
+    
+    movement_type = woodland
+    
+    description= _ "Your most basic of units"
+    
+    [attack]
+		name = sword
+		description = _"Sword"
+		icon = weapons/sword.png
+		type = blade
+		range = melee
+		damage = 5
+		number = 10
+	[/attack]
+	
+	[attack_anim]
+		[filter_attack]
+			name=sword
+		[/filter_attack]
+		[frame]
+    		begin=-75
+    		end=25
+    		image=units/basic-attack.png
+    	[/frame]
+    	[frame]
+            begin=25
+            end=75
+            image=units/basic.png
+        [/frame]
+	[/attack_anim]
+[/unit_type]

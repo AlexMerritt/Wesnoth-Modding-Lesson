@@ -1,0 +1,32 @@
+I would like to go over the first 2 sections in 30 mins but I think it might take a bit longer. 30 mins for the intro will leave 2 hours for modding which would be good. This is a low estimate and I think it will take roughly x2 as long to complete each section
+
+Section 1: Playing the game ~ 15 mins
+	1) Quick Demo of the game
+	2) Let the kids play the tutorial
+	3) Kids can play the campaign if they want
+
+Section 2: IDE ~ 15 mins
+	1) Brief explanation of the development environment
+	2) Go over the project solution and the files
+	3) Go over creating and editing files
+	4) Go over adding files to the project (images, sounds, etc)
+	5) Talk about the file system and where things are located
+	
+Section 3: Sprites and Animation ~ 30 mins
+	1) Creating a new character
+	2) Setting up a new character
+	3) Add images to the project
+	4) Changing character's sprite
+	--- Optional ---
+	5) Adding attack animations
+	6) Adding idle animations
+	7) Adding getting hit and blocking animations
+	
+Section 4: Modding Values ~ 30 mins
+	1) Going over stats and what they do
+	2) Messing with stats
+	3) Talk about balancing stats
+	
+Section 5: Level ~ 30 mins
+	1) Go over the level editor
+	2) Showing how to mod levelsS
